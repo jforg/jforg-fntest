@@ -15,3 +15,19 @@ button {
 </style>
 <p><button>Get Amazon Sale</button></p>
 <p><output>…</output></p>
+<script>
+const btn = document.querySelector('button')
+btn.addEventListener('click', async () => {
+  const endPoint = '/.netlify/functions/amazon-sale'
+  const response = await fetch(endPoint)
+  const data = await response.json()
+
+  if (data.totalCount > 0) {
+    const output = document.querySelector('output')
+    const content = data.contents[0]
+    output.textContent = content.copy
+  } else {
+    output.textContent = 'No sale found'
+  }
+})
+</script>

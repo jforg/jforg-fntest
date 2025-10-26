@@ -1,0 +1,25 @@
+{
+  "name": "jforg-fntest",
+  "version": "0.1.0",
+  "description": "test",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "build": "# no build command",
+    "dev": "netlify dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jforg/jforg-fntest.git"
+  },
+  "author": "Jeffrey Francesco <jeffrey.francesco@gmail.com> (https://jeffreyfrancesco.org)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jforg/jforg-fntest/issues"
+  },
+  "homepage": "https://github.com/jforg/jforg-fntest#readme",
+  "dependencies": {
+    "microcms-js-sdk": "^3.2.0"
+  }
+}
